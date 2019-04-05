@@ -1,0 +1,133 @@
+@background_color_1: #fbf3c2;
+@navbar_color: #e22565;
+@icon_color: #a2a2a2;
+
+body {
+	overflow-x: hidden;
+	text-align: center;
+}
+
+.header {
+	background-color: @background_color_1;
+	position: fixed;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1000;
+	height: 20vh;
+}
+
+.logo-title {
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 10px;
+	height: 20vh;
+}
+
+.navbar {
+	background-color: @navbar_color;
+	height: 100%;
+	position: fixed;
+	z-index: 100;
+	padding-top: 21vh;
+}
+
+.fas {
+	color: @icon_color;
+}
+
+.content {
+	margin-top: 10%;
+}
+
+.spinner{
+	width: 35%;
+}
+
+.p-list {
+	font-size: 22px;
+	text-align: center;
+	display: table-cell;
+    vertical-align: middle;
+}
+
+.title-recette {
+	color: @navbar_color;
+}
+
+.tableau {
+	border-collapse: separate;
+}
+
+.space {
+	margin-bottom: 50px;
+}
+
+.nav-tabs {
+    margin: 0 !important;
+}
+
+.tab-content {
+    padding: 30px !important;
+    height: 100% !important; 
+    border-radius: 0 !important;
+}
+
+.nav-item.show .nav-link, .nav-link.active{
+    border-top: 4px solid !important;
+    border-left: 4px solid !important;
+    border-right: 4px solid !important;
+    border-bottom: none !important;
+    border-color: #e22565 !important;
+    border-radius: 0 !important;
+    color: black !important;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.tab-pane {
+    font-size: 17px;
+}
+
+a, a:focus, a:hover {
+    color: rgba(0, 0, 0, 0.65) !important;
+}
+
+.nav-tabs .nav-item {
+    margin-left: -4px;
+    font-size: 20px;
+}
+
+.nav-tabs > li > a:hover {
+    border-radius: 0;
+  }
+
+@media only screen and (min-width: 600px) {
+    .content {
+        margin-left: 22%;
+        margin-top: 30%;
+        display:block;
+        clear:both;
+    }
+} 
+
+@media only screen and (min-width: 1024px) {
+    .content {
+        margin-left: 20%;
+        margin-top: 20%;
+        display:block;
+        clear:both;
+    }
+} 
+
+@media only screen and (min-width: 1440px) {
+    .content {
+        margin-top: 15%;
+        display:block;
+        clear:both;
+    }
+}
+
+
